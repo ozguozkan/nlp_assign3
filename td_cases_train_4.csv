@@ -1,0 +1,377 @@
+,case_description,root_cause,golden_doc,golden_id
+0,Inability to obtain the data scraped from commercial sites,Data formats change over time in the third-party data source,Design Definition Process (6.4.5),20
+1,Ambiguity in the labeling protocol,-,System Requirements Definition Process (6.4.3),18
+2,"Problems in data retrieval via API, such as incorrect parsing, fetching unnecessary data, and not testing data acquisition",Poor data pipeline decisions,Decision Management Process (6.3.3),10
+3,Lack of comprehensive testing in ML projects before deployment,The need for testers specifically in the ML domain,Validation Process (6.4.13),28
+4,Out-of-distribution (OOD) examples or novelty detection,Pandemic affected trends in the data,AI Data Engineering Process (6.4.8),23
+5,Stream images designed by software teams may not be compatible with data ingestion required for ML models / Interruption in real-time data,Lack of stakeholders' knowledge in ML domain or their technical unawareness,Knowledge Management Process (6.2.6),7
+6,Lack of a unified labeling protocol within different parts of the same projects ,Different teams identify their own annotation requirements separately for different parts of the same project and do not communicate,Stakeholder Needs and Requirements Definition Process (6.4.2),17
+7,Excessively focusing on improving model accuracy while ignoring other important objectives of the project / Misalignment between engineering efforts and business objectives,Assumption that it will secure collaborations with potential partner companies,Project Planning Process (6.3.1),8
+8,Lack of labelling protocol and dataset requirements specification,Impractical to annotate all the data due to its volume and resource constraints,System Requirements Definition Process (6.4.3),18
+9,Compatibility issues arising from incompatible software versions,Lack of software version documentation,Configuration Management Process (6.3.5),12
+10,Technical misalignment between hardware and model specifications such as the usage of dedicated hardware (System on Chip) leading to writing custom code for hardware-specific integration and the prolonged and laborious process of model integration,Premature hardware selection before considering the ML model,Integration Process (6.4.10),25
+11,Increase in false positives during anomaly detection project using time-series data,The customer thinks that the reported model result is false positive due to lack of agreeing on requirements,System Requirements Definition Process (6.4.3),18
+12,"The data has a limited number of labeled instances, and those that are labeled are biased",The limitation is due to limited resources for manual labeling,Project Planning Process (6.3.1),8
+13,Uncertainty in data source structure,Lack of stakeholders' knowledge (customer) in ML domain or their technical unawareness on data requirements specification,AI Data Engineering Process (6.4.8),23
+14,Difficulties in minimizing latency during deployment of LLMs ,"The complexity of the system, such as having multiple layers or components that add to the overall latency, use of latest technology, database choices, and the implementation of end-to-end systems",System Requirements Definition Process (6.4.3),18
+15,Out-of-data-distribution (ODD) and concept drifts,"Users' keywords for search fluctuate which affects search engines' performance
+",AI Data Engineering Process (6.4.8),23
+16,"Failures in automated processes, such as the system creating new machines uncontrollably, leading to system instability","Reusing of existing model codes with insufficient documentation of data, code, and environment ",Implementation Process (6.4.9),24
+17,Out-of-data-distribution (ODD) and concept drifts,"Users' keywords for search fluctuate which affects search engines' performance
+",Continuous Validation Process (6.4.14),29
+18,Lack of a unified labeling protocol within different parts of the same projects ,Different teams identify their own annotation requirements separately for different parts of the same project and do not communicate,Configuration Management Process (6.3.5),12
+19,Data smells emerged due to inconsistency between previously labelled data and current data labeled with the revised labeling protocol,Ambiguity in the labeling protocol,AI Data Engineering Process (6.4.8),23
+20,Ambiguity in the labeling protocol,The use cases of legitimate users and spammers are almost identical,Quality Management Process (6.2.5),6
+21,Difficulty in selecting a representative validation dataset ,The need to validate the model with real-world data,Risk Management Process (6.3.4),11
+22,The need for labelling protocol and training programs to ensure annotators understand and adhere to the labeling protocol,-,Quality Management Process (6.2.5),6
+23,Understanding and reproducing the third-party pre-built model is time-consuming,No transparency regarding how the third-party pre-built model is trained and which input data the model is trained on,Configuration Management Process (6.3.5),12
+24,Unable to include the documents exceeding the character size limitations of the embedding model into the datasets,Embedding size limitations of the third-party deep learning models,Acquisition Process (6.1.1),0
+25,No previously labeled data,Customers video data do not inherently contain labels,System Requirements Definition Process (6.4.3),18
+26,Missing downstream data during time series forecasting,Dependencies on upstream data sources,AI Data Engineering Process (6.4.8),23
+27,The public dataset is not representative for the problem,They opted for using a public dataset rather than creating their own,Acquisition Process (6.1.1),0
+28,High maintenance requirements for manuel data preprocessing for the upcoming data,Lack of human resources to find out the root causes of data problems ,Quality Assurance Process (6.3.8),15
+29,Issues related to irrelevant and redundant data collection process,-,AI Data Engineering Process (6.4.8),23
+30,Identification of issues with out-of-distribution (OOD) examples or novelty detection after model deployment,"Changes in objects data such as new generation shopping carts, indicating that the environment is chaotic and continuously evolving",Quality Assurance Process (6.3.8),15
+31,Identification of issues with out-of-distribution (OOD) examples or novelty detection after model deployment,"Changes in objects data such as new generation shopping carts, indicating that the environment is chaotic and continuously evolving",Continuous Validation Process (6.4.14),29
+32,Code duplication / Copy-paste coding,Multiple models sharing the same code,Verification Process (6.4.11),26
+33,Model building was naively done such as testing a pre-trained model with publicly available data to see if it works and fine tuning the model ,"The shortage of relevant data forced the ML team to rely on less appropriate, publicly available datasets",AI Data Engineering Process (6.4.8),23
+34,Having noisy data,Scraped commercial websites include duplicate and inconsistent user submission data ,AI Data Engineering Process (6.4.8),23
+35,Partially correct outsourced labeled data,The use of outsourced data,Quality Assurance Process (6.3.8),15
+36,Model update processes implemented temporarily for a single user's need (quick fix) are not scaled for all similar deployed models and they are not tested,Urgent customer needs are required to be solved in critical time,Maintenance Process (6.4.16),31
+37,Out-of-distribution (OOD) examples,"Adversarial attacks by phishers, with spam content methods continuously evolving and improving",Quality Assurance Process (6.3.8),15
+38,Lack of comprehensive testing in ML projects before deployment,The need for testers specifically in the ML domain,Human Resource Management Process (6.2.4),5
+39,Potential loss of model and training progress due to interruptions such as power outage,Lack of experiment tracking which will let to define checkpoints and enable systematic model logging to recover from interruptions,Information Management Process (6.3.6),13
+40,Ambiguity in the labeling protocol,-,Quality Management Process (6.2.5),6
+41,Handling data from third-party sources and using it in the current model is challenging ,"Third-party data sources receive frequent updates, making continuous alignment challenging",AI Data Engineering Process (6.4.8),23
+42,Experiencing memory leaks during data preprocessing step,Inadequate and untested third-party software dependencies ,Acquisition Process (6.1.1),0
+43,Out-of-data-distribution (ODD) and concept drifts,"Users' keywords for search fluctuate which affects search engines' performance
+",Operation Process (6.4.15),30
+44,Out-of-distribution (OOD) examples,"Adversarial attacks by phishers, with spam content methods continuously evolving and improving",System Requirements Definition Process (6.4.3),18
+45,Redundant update processes are carried out to set the duration for data retention ,"A Python package is used for data wrangling, and the update retention period is set for a definite/limited time",Configuration Management Process (6.3.5),12
+46,Out-of-distribution (OOD) examples,"Adversarial attacks by phishers, with spam content methods continuously evolving and improving",AI Data Engineering Process (6.4.8),23
+47,Biased and poor quality labeled data,Reliance on crowdsourced data labeling,AI Data Engineering Process (6.4.8),23
+48,"Problems in data retrieval via API, such as incorrect parsing, fetching unnecessary data, and not testing data acquisition",Poor data pipeline decisions,Acquisition Process (6.1.1),0
+49,"Failures in automated processes, such as the system creating new machines uncontrollably, leading to system instability","Reusing of existing model codes with insufficient documentation of data, code, and environment ",Knowledge Management Process (6.2.6),7
+50,The need for labelling protocol and training programs to ensure annotators understand and adhere to the labeling protocol,-,Quality Management Process (6.2.5),6
+51,Difficulty in selecting a representative validation dataset ,The need to validate the model with real-world data,Quality Assurance Process (6.3.8),15
+52,Model building was naively done such as testing a pre-trained model with publicly available data to see if it works and fine tuning the model ,The need of private representative company data which isn't shared with the team at the beginning,System Requirements Definition Process (6.4.3),18
+53,No previously labeled data,Limited human resources for labeling,Human Resource Management Process (6.2.4),5
+54,Lack of code reusability,Time constraints,Verification Process (6.4.11),26
+55,Refraining from discussing project issues with upper management,Overreliance on tools by the team for solving process and product-related problems,Quality Assurance Process (6.3.8),15
+56,"Significant reduction in training data after splitting the data into test, training, and validation sets",Limited data availability,Risk Management Process (6.3.4),11
+57,Failure to include new use cases in the dataset,Incorrect assumption about the data source of new use cases,Risk Management Process (6.3.4),11
+58,Data smells emerged due to inconsistency between previously labelled data and current data labeled with the revised labeling protocol,Ambiguity in the labeling protocol,Quality Management Process (6.2.5),6
+59,Out-of-data-distribution (ODD) and concept drifts,"Users' keywords for search fluctuate which affects search engines' performance
+",Quality Assurance Process (6.3.8),15
+60,High maintenance requirements for manuel data preprocessing for the upcoming data,Lack of human resources to find out the root causes of data problems ,AI Data Engineering Process (6.4.8),23
+61,Low code quality (as there is an accumulation of lines of hard-to-maintain code),The issue is not a priority for the team,Maintenance Process (6.4.16),31
+62,"Failures in automated processes, such as the system creating new machines uncontrollably, leading to system instability","Reusing of existing model codes with insufficient documentation of data, code, and environment ",Quality Assurance Process (6.3.8),15
+63,Decreased model performance,Lack of unified conventions regarding the use of third-party libraries during model building process across different teams,Quality Management Process (6.2.5),6
+64,Long and redundant deployment of recommendation engine into production environments,-,Transition Process (6.4.12),27
+65,Missing downstream data during time series forecasting,Dependencies on upstream data sources,Risk Management Process (6.3.4),11
+66,"Team members delay merging their work on their branches, and instead of using the master branch, they try to pull the most recent model from each other's branches",Lack of usage of a central GitHub branch,Design Definition Process (6.4.5),20
+67,Loss of information in experiment details,Manual experiement tracking is not systematically done,Configuration Management Process (6.3.5),12
+68,Out-of-distribution (OOD) examples,"Adversarial attacks by phishers, with spam content methods continuously evolving and improving",Quality Assurance Process (6.3.8),15
+69,Compatibility issues arising from incompatible software versions,Lack of software version documentation,Configuration Management Process (6.3.5),12
+70,Difficulty in matching data collected from different third-party sources,Being solely dependent on third-party data sources,Acquisition Process (6.1.1),0
+71,Out-of-distribution (OOD) examples,"Adversarial attacks by phishers, with spam content methods continuously evolving and improving",AI Data Engineering Process (6.4.8),23
+72,Code incomprehensibility and lack of code description,Lack of a convention for code reusability causes significant problems in case of high staff turnover,Implementation Process (6.4.9),24
+73,Lack of labelling protocol and dataset requirements specification,Impractical to annotate all the data due to its volume and resource constraints,Human Resource Management Process (6.2.4),5
+74,"Failures in automated processes, such as the system creating new machines uncontrollably, leading to system instability","Reusing of existing model codes with insufficient documentation of data, code, and environment ",Configuration Management Process (6.3.5),12
+75,Compatibility issues arising from incompatible software versions,Lack of software version documentation,System Requirements Definition Process (6.4.3),18
+76,Inability to obtain the data scraped from commercial sites,Data formats change over time in the third-party data source,AI Data Engineering Process (6.4.8),23
+77,"Each ML engineer is responsible for training a different model for their task but cannot use the necessary data independently, leading to delays","The decision was made to focus on immediate solutions and faster resolution during the model coding phase, independent of data, leading to the construction of the system on this basis",Implementation Process (6.4.9),24
+78,Technical misalignment between hardware and model specifications such as the usage of dedicated hardware (System on Chip) leading to writing custom code for hardware-specific integration and the prolonged and laborious process of model integration,Premature hardware selection before considering the ML model,Implementation Process (6.4.9),24
+79,Increase in false positives during anomaly detection project using time-series data,The customer thinks that the reported model result is false positive due to lack of agreeing on requirements,Stakeholder Needs and Requirements Definition Process (6.4.2),17
+80,Change logs of model architectures and training are stored locally,Version control tools were not very advanced at the time of the project phase,Project Assessment and Control Process (6.3.2),9
+81,Change logs of model architectures and training are stored locally,Lack of adoption of a professional experiment tracking tool for systematic tracking of models,Project Planning Process (6.3.1),8
+82,Increase in false positives during form-based phishing project ,The data is not properly labeled in the database,AI Data Engineering Process (6.4.8),23
+83,Inability to utilize pre-built language models trained on text data written in English,The dataset is scattered across different languages,AI Data Engineering Process (6.4.8),23
+84,Change logs of model architectures and training are stored locally,Lack of adoption of a professional experiment tracking tool for systematic tracking of models,Infrastructure Management Process (6.2.2),3
+85,Loss of information in experiment details,Manual experiement tracking is not systematically done,Knowledge Management Process (6.2.6),7
+86,Experiencing memory leaks during data preprocessing step,Inadequate and untested third-party software dependencies ,Risk Management Process (6.3.4),11
+87,"The need to retrieve data directly from a live, production database and the need for high-frequency data extraction",Unable to find an approach for effective and resource-efficient logging of model inference results,Operation Process (6.4.15),30
+88,Handling data from third-party sources and using it in the current model is challenging ,"Third-party data sources receive frequent updates, making continuous alignment challenging",Continuous Validation Process (6.4.14),29
+89,Understanding and reproducing the third-party pre-built model is time-consuming,No transparency regarding how the third-party pre-built model is trained and which input data the model is trained on,Risk Management Process (6.3.4),11
+90,Failure to include new use cases in the dataset,Incorrect assumption about the data source of new use cases,Design Definition Process (6.4.5),20
+91,Model building was naively done such as testing a pre-trained model with publicly available data to see if it works and fine tuning the model ,"The shortage of relevant data forced the ML team to rely on less appropriate, publicly available datasets",Implementation Process (6.4.9),24
+92,Manual integration of various data wrangling processes in an old VM ,The optimistic belief that an old VM could quickly adapt to these data wrangling processes,Integration Process (6.4.10),25
+93,Biased and poor quality labeled data,Reliance on crowdsourced data labeling,Quality Assurance Process (6.3.8),15
+94,Change logs of model architectures and training are stored locally,"Lack of organizational readiness to adapt to experiment tracking tools, coupled with the discouraging nature of the required learning curve.",Knowledge Management Process (6.2.6),7
+95,Data smells emerged due to inconsistency between previously labelled data and current data labeled with the revised labeling protocol,Ambiguity in the labeling protocol,Quality Assurance Process (6.3.8),15
+96,Increase in false positives during anomaly detection project using time-series data,The customer thinks that the reported model result is false positive due to lack of agreeing on requirements,Stakeholder Needs and Requirements Definition Process (6.4.2),17
+97,Increase in false positives during email-based phishing project,Incorrect assumption about which data to be used for labeling from a large user dataset,AI Data Engineering Process (6.4.8),23
+98,The use of non-English pre-built language models is impractical for translating meaningful sentences,Non-English language models have limited performance ,Quality Assurance Process (6.3.8),15
+99,"Inadequate choice of framework which is for processing of large-scale task-based pipelines
+
+",The chosen framework has modules enable developers to observe model inference results in detail and ease of development features,Decision Management Process (6.3.3),10
+100,Time-consuming and resource-intensive process of labeling data,Having data from heterogeneous sources,Risk Management Process (6.3.4),11
+101,Deploying and optimizing the model with TensorRT to specific GPUs is taking more time than anticipated,"Inadequate consideration of the model's characteristics, such as model size, and project requirements, such as the need for real-time processing, resulting in an inappropriate choice of GPU",Project Planning Process (6.3.1),8
+102,Time-consuming and resource-intensive process of labeling data,Lack of human resources for labeling ,Human Resource Management Process (6.2.4),5
+103,Initial design decisions about the third-party dependencies did not align with the domain problem's requirements in the later stages of the project,Insufficient third-party model or library selection process,Decision Management Process (6.3.3),10
+104,Difficulties in minimizing latency during deployment of LLMs ,"The complexity of the system, such as having multiple layers or components that add to the overall latency, use of latest technology, database choices, and the implementation of end-to-end systems",Transition Process (6.4.12),27
+105,"Reduction in the number of data sources such as cameras to achieve a simpler, more feasible solution",Excessive number of cameras led to unmanageable processing demands and algorithmic complexity,Acquisition Process (6.1.1),0
+106,Data smells emerged due to inconsistency between previously labelled data and current data labeled with the revised labeling protocol,Ambiguity in the labeling protocol,Quality Management Process (6.2.5),6
+107,Having noisy data,Scraped commercial websites include duplicate and inconsistent user submission data ,AI Data Engineering Process (6.4.8),23
+108,Model building was naively done such as testing a pre-trained model with publicly available data to see if it works and fine tuning the model ,The need of private representative company data which isn't shared with the team at the beginning,Quality Assurance Process (6.3.8),15
+109,Unable to include the documents exceeding the character size limitations of the embedding model into the datasets,Embedding size limitations of the third-party deep learning models,System Requirements Definition Process (6.4.3),18
+110,Deploying and optimizing the model with TensorRT to specific GPUs is taking more time than anticipated,"Inadequate consideration of the model's characteristics, such as model size, and project requirements, such as the need for real-time processing, resulting in an inappropriate choice of GPU",Operation Process (6.4.15),30
+111,Inability to clearly understand which keywords and/or pages users used to access the relevant page for the recommendation engine,Lacking a cloud-based analytical environment that can acquire data and identify its use cases ,Design Definition Process (6.4.5),20
+112,Manual integration of various data wrangling processes in an old VM ,The optimistic belief that an old VM could quickly adapt to these data wrangling processes,Infrastructure Management Process (6.2.2),3
+113,Real-time data collection from drones is not allowed in public spaces for commercial purposes,Safety concerns regarding data collection with drones may lead to distraction of drivers in traffic,Design Definition Process (6.4.5),20
+114,Compatibility issues arising from incompatible software choices,Resistance to change due to lack of collaboration,Quality Assurance Process (6.3.8),15
+115,Data smells emerged due to inconsistency between previously labelled data and current data labeled with the revised labeling protocol,-,Quality Management Process (6.2.5),6
+116,Loss of information in experiment details,Manual experiement tracking is not systematically done,Project Planning Process (6.3.1),8
+117,Change logs of model architectures and training are stored locally,Lack of adoption of a professional experiment tracking tool for systematic tracking of models,Infrastructure Management Process (6.2.2),3
+118,Partially correct outsourced labeled data,The use of outsourced data,Acquisition Process (6.1.1),0
+119,Compatibility issues arising from incompatible software versions,Lack of software version documentation,Information Management Process (6.3.6),13
+120,No previously labeled data,Lack of data collection at the customer side,Acquisition Process (6.1.1),0
+121,Low code quality (as there is an accumulation of lines of hard-to-maintain code),The issue is not a priority for the team,Maintenance Process (6.4.16),31
+122,The need for labelling protocol and training programs to ensure annotators understand and adhere to the labeling protocol,-,Human Resource Management Process (6.2.4),5
+123,Lack of code reusability,Time constraints,Project Planning Process (6.3.1),8
+124,Model training takes longer than anticipated,Inadequate choice of computing instances for training models such as using a low-capacity instance for a large model,Operation Process (6.4.15),30
+125,Lack of scalability and flexibility in cloud server allocation during deployment of their ML applications,Auto-scaling to optimize computing resources is not implemented yet such as using Kubernetes,Operation Process (6.4.15),30
+126,Difficulty in selecting a representative validation dataset ,The need to validate the model with real-world data,Decision Management Process (6.3.3),10
+127,Ambiguity in the labeling protocol,The use cases of legitimate users and spammers are almost identical,Quality Management Process (6.2.5),6
+128,Out-of-distribution (OOD) examples,"Adversarial attacks by phishers, with spam content methods continuously evolving and improving",System Requirements Definition Process (6.4.3),18
+129,Data smells emerged due to inconsistency between previously labelled data and current data labeled with the revised labeling protocol,-,Maintenance Process (6.4.16),31
+130,Lack of code reusability,Time constraints,Implementation Process (6.4.9),24
+131,Model update processes implemented temporarily for a single user's need (quick fix) are not scaled for all similar deployed models and they are not tested,Neglecting to propagate updates on the models which serve to other customers or not prioritizing it,Verification Process (6.4.11),26
+132,Out-of-distribution (OOD) examples,"Adversarial attacks by phishers, with spam content methods continuously evolving and improving",Operation Process (6.4.15),30
+133,Bugs and issues being discovered during or after deployment,"Lack of comprehensive testing strategies and resource allocation for testing of data pipelines, model code, and overall system integration",Operation Process (6.4.15),30
+134,The movement of objects and intermittent visibility significantly degrading the performance of models trained solely on still images,Models trained on images being applied to video processing as there are no pre-trained models for video data in the domain problem ,Quality Assurance Process (6.3.8),15
+135,Some functions of the ML deployment tool perform poorly and cause unexpected issues ,Lack of comprehensive documentation of a recent deployment tool,Infrastructure Management Process (6.2.2),3
+136,Increase in false positives during email-based phishing project ,Incorrect assumption about which data to be used for labeling from a large user dataset,AI Data Engineering Process (6.4.8),23
+137,Difficulties in minimizing latency during deployment of LLMs ,"The complexity of the system, such as having multiple layers or components that add to the overall latency, use of latest technology, database choices, and the implementation of end-to-end systems",Transition Process (6.4.12),27
+138,Inability to clearly understand which keywords and/or pages users used to access the relevant page for the recommendation engine,Lacking a cloud-based analytical environment that can acquire data and identify its use cases ,Acquisition Process (6.1.1),0
+139,Compatibility issues arising from incompatible software versions,"Dependencies on external / third-party libraries or tools that may change over time
+",System Requirements Definition Process (6.4.3),18
+140,Loss of information in experiment details,Manual experiement tracking is not systematically done,Knowledge Management Process (6.2.6),7
+141,Change logs of model architectures and training are stored locally,Lack of adoption of a professional tool for systematic model tracking,Project Planning Process (6.3.1),8
+142,Difficulty in deriving meaningful insights from the data,"Poor quality data from the customer such as incomplete, inaccurate, or missing data",AI Data Engineering Process (6.4.8),23
+143,Data smells emerged due to inconsistency between previously labelled data and current data labeled with the revised labeling protocol,-,AI Data Engineering Process (6.4.8),23
+144,Ambiguity in the labeling protocol,-,AI Data Engineering Process (6.4.8),23
+145,"Version mismatch between the third-party libraries
+",-,Configuration Management Process (6.3.5),12
+146,Incomplete or insufficient datasets gathered from third-party data sources,Restrictions on the number of API requests,AI Data Engineering Process (6.4.8),23
+147,"The data has a limited number of labeled instances, and those that are labeled are biased",The bias is due to being assumption-based labeling regarding which cases are considered as spam,System Requirements Definition Process (6.4.3),18
+148,Unable to include the documents exceeding the character size limitations of the embedding model into the datasets,Embedding size limitations of the third-party deep learning models,Decision Management Process (6.3.3),10
+149,Lack of comprehensive testing strategies before deployment,Lack of knowledge and expertise of ML team members in testing ,Human Resource Management Process (6.2.4),5
+150,No previously labeled data,Limited human resources for labeling,Quality Assurance Process (6.3.8),15
+151,Difficulty in selecting a representative validation dataset ,The need to validate the model with real-world data,Implementation Process (6.4.9),24
+152,Model building was naively done such as testing a pre-trained model with publicly available data to see if it works and fine tuning the model ,"The shortage of relevant data forced the ML team to rely on less appropriate, publicly available datasets",Quality Assurance Process (6.3.8),15
+153,Significant time lost in reverting to a previous state of the ML model,Immediate urge to undo model changes to revert to the known state of better performance when new changes result in poorer model performance,Configuration Management Process (6.3.5),12
+154,Compatibility issues arising from incompatible software versions,Lack of software version documentation,Quality Assurance Process (6.3.8),15
+155,Experiencing memory leaks from the deployed models,Inadequate and untested third-party software dependencies ,Validation Process (6.4.13),28
+156,Difficulty in selecting a representative validation dataset ,The need to validate the model with real-world data,Design Definition Process (6.4.5),20
+157,Change logs of model architectures and training are stored locally,Lack of adoption of a professional tool for systematic model tracking,Configuration Management Process (6.3.5),12
+158,Initial design decisions about the third-party dependencies did not align with the domain problem's requirements in the later stages of the project,Insufficient third-party model or library selection process,Decision Management Process (6.3.3),10
+159,Restrictions on the use of certain third-party software capabilities as they require users' data access,Data privacy concerns such as data leaks,System Requirements Definition Process (6.4.3),18
+160,The deployed model shuts down in production,Running a heavy model causing memory leak,Maintenance Process (6.4.16),31
+161,Compatibility issues arising from incompatible software versions,The requirement for software that needs to operate while dependent on the old code with the new updates of the third-party software,System Requirements Definition Process (6.4.3),18
+162,"Significant reduction in training data after splitting the data into test, training, and validation sets",Limited data availability,Design Definition Process (6.4.5),20
+163,No previously labeled data,Lack of data collection at the customer side,AI Data Engineering Process (6.4.8),23
+164,Time-consuming and resource-intensive process of labeling data,Lack of human resources for labeling ,Project Planning Process (6.3.1),8
+165,Redundant labeling processes ,-,AI Data Engineering Process (6.4.8),23
+166,"Failures in automated processes, such as the system creating new machines uncontrollably, leading to system instability","Reusing of existing model codes with insufficient documentation of data, code, and environment ",Quality Assurance Process (6.3.8),15
+167,Stream images designed by software teams may not be compatible with data ingestion required for ML models / Interruption in real-time data,Lack of stakeholders' knowledge in ML domain or their technical unawareness,Project Assessment and Control Process (6.3.2),9
+168,Partially correct outsourced labeled data,The use of outsourced data,AI Data Engineering Process (6.4.8),23
+169,Out-of-distribution (OOD) examples,"Adversarial attacks by phishers, with spam content methods continuously evolving and improving",AI Data Engineering Process (6.4.8),23
+170,Model building was naively done such as testing a pre-trained model with publicly available data to see if it works and fine tuning the model ,The need of private representative company data which isn't shared with the team at the beginning,Acquisition Process (6.1.1),0
+171,Inadequate software design choice limiting scalability of the implementation of ML model ,"Use of a third-party library that supports function-based, rather than class-based, object-oriented design",Decision Management Process (6.3.3),10
+172,Difficulty in tailoring existing in-house projects to different customers,Data heterogeneity arising from the use of different video cameras and various software for data collection in customer stores,AI Data Engineering Process (6.4.8),23
+173,Uncertainty in data source structure,Lack of stakeholders' knowledge (customer) in ML domain or their technical unawareness on data requirements specification,Design Definition Process (6.4.5),20
+174,Some functions of the ML deployment tool perform poorly and cause unexpected issues ,The early adoption of an immature and unstable third-party deployment tool's release,Infrastructure Management Process (6.2.2),3
+175,Lack of scalability and flexibility in cloud server allocation during deployment of their ML applications,Auto-scaling to optimize computing resources is not implemented yet such as using Kubernetes,Project Planning Process (6.3.1),8
+176,Having noisy data,Email body containing HTML data cannot be preprocessed well and there is a difficulty on representing it as structured data,Quality Assurance Process (6.3.8),15
+177,Some functions of the ML deployment tool perform poorly and cause unexpected issues ,The early adoption of an immature and unstable third-party deployment tool's release,Project Planning Process (6.3.1),8
+178,The use of non-English pre-built language models is impractical for translating meaningful sentences,Non-English language models have limited performance ,Implementation Process (6.4.9),24
+179,Model building was naively done such as testing a pre-trained model with publicly available data to see if it works and fine tuning the model ,"The shortage of relevant data forced the ML team to rely on less appropriate, publicly available datasets",Quality Assurance Process (6.3.8),15
+180,Lack of reliability and robustness checks for open source versions of company products,Lack of continous monitoring for open source (non-commercial) versions of company products,Continuous Validation Process (6.4.14),29
+181,The model has low success in small object detection ,Lack of diverse training data,AI Data Engineering Process (6.4.8),23
+182,Excessively focusing on improving model accuracy while ignoring other important objectives of the project / Misalignment between engineering efforts and business objectives,Assumption that it will secure collaborations with potential partner companies,System Requirements Definition Process (6.4.3),18
+183,Difficulty in selecting a representative validation dataset ,The need to validate the model with real-world data,Implementation Process (6.4.9),24
+184,The public dataset is not representative for the problem,They opted for using a public dataset rather than creating their own,Quality Assurance Process (6.3.8),15
+185,The need for labelling protocol and training programs to ensure annotators understand and adhere to the labeling protocol,-,Configuration Management Process (6.3.5),12
+186,Unable to include the documents exceeding the character size limitations of the embedding model into the datasets,Embedding size limitations of the third-party deep learning models,Decision Management Process (6.3.3),10
+187,Initial design decisions about the third-party dependencies did not align with the domain problem's requirements in the later stages of the project,Insufficient third-party model or library selection process,Quality Assurance Process (6.3.8),15
+188,No previously labeled data,Customers video data do not inherently contain labels,AI Data Engineering Process (6.4.8),23
+189,Having noisy data,Data formats in public datasets are not matched,AI Data Engineering Process (6.4.8),23
+190,Having noisy data,Email body containing HTML data cannot be preprocessed well and there is a difficulty on representing it as structured data,AI Data Engineering Process (6.4.8),23
+191,Difficulties in minimizing latency during deployment of LLMs ,"The complexity of the system, such as having multiple layers or components that add to the overall latency, use of latest technology, database choices, and the implementation of end-to-end systems",System Requirements Definition Process (6.4.3),18
+192,Loss of information in experiment details,Manual experiement tracking is not systematically done,Knowledge Management Process (6.2.6),7
+193,Change logs of model architectures and training are stored locally,Lack of adoption of a professional experiment tracking tool for systematic tracking of models,Configuration Management Process (6.3.5),12
+194,Low code quality (as there is an accumulation of lines of hard-to-maintain code),The issue is not a priority for the team,Quality Assurance Process (6.3.8),15
+195,Difficulty in selecting a representative validation dataset ,The need to validate the model with real-world data,Risk Management Process (6.3.4),11
+196,Restrictions on the use of certain third-party software capabilities as they require users' data access,Data privacy concerns such as data leaks,Risk Management Process (6.3.4),11
+197,Placing excessive trust in recently released ML models,The ML team assume that recent models are always superior than older models in terms of capabilities and performance,Human Resource Management Process (6.2.4),5
+198,Out-of-distribution (OOD) examples or novelty detection,Pandemic affected trends in the data,Continuous Validation Process (6.4.14),29
+199,Quantization and model pruning which are required for deployment on embedded platforms are very labor-intensive and time-consuming processes,"The need for deep technical expertise to navigate the trade-offs between model size, speed, and accuracy",Project Assessment and Control Process (6.3.2),9
+200,Having adversarial data ,Malicious users are trying to get PII information of users of the platform by impersonating companies and are adding this data to scam the users ,AI Data Engineering Process (6.4.8),23
+201,Change logs of model architectures and training are stored locally,"Lack of organizational readiness to adapt to experiment tracking tools, coupled with the discouraging nature of the required learning curve.",Configuration Management Process (6.3.5),12
+202,Having noisy data,Data formats in public datasets are not matched,AI Data Engineering Process (6.4.8),23
+203,"The data has a limited number of labeled instances, and those that are labeled are biased",The limitation is due to limited resources for manual labeling,AI Data Engineering Process (6.4.8),23
+204,Difficulty in matching data collected from different third-party sources,Being solely dependent on third-party data sources,Quality Assurance Process (6.3.8),15
+205,Lack of use of software development conventions and reproducibility standards in the ML project ,"Software development conventions and reproducibility standards including documentation are neglected during the intermediate stages of an ML project such as research and prototyping, where the effectiveness of models or functions is still uncertain",Implementation Process (6.4.9),24
+206,Having adversarial data ,Malicious users are trying to get PII information of users of the platform by impersonating companies and are adding this data to scam the users,System Requirements Definition Process (6.4.3),18
+207,Inability to clearly understand which keywords and/or pages users used to access the relevant page for the recommendation engine,Lacking a cloud-based analytical environment that can acquire data and identify its use cases ,Risk Management Process (6.3.4),11
+208,Ambiguity in the labeling protocol,"Difficulty in initially determining the labeling protocol, such as whether to use pixel or bounding box, and how many different object classes",Quality Management Process (6.2.5),6
+209,"Manually accessing necessary operational information, such as log files, especially when the machines running the primary deployed model instances are down, which is a laborious solution",Lack of an interface to intervene and track instances where the machines run the primary deployed models,System Requirements Definition Process (6.4.3),18
+210,Lack of use of software development conventions and reproducibility standards in the ML project ,"Software development conventions and reproducibility standards including documentation are neglected during the intermediate stages of an ML project such as research and prototyping, where the effectiveness of models or functions is still uncertain",Implementation Process (6.4.9),24
+211,Compatibility issues arising from incompatible software versions,Lack of software version documentation,Quality Assurance Process (6.3.8),15
+212,Compatibility issues arising from incompatible software choices,Resistance to change due to lack of collaboration,Decision Management Process (6.3.3),10
+213,Having noisy data,Email body containing HTML data cannot be preprocessed well and there is a difficulty on representing it as structured data,Quality Assurance Process (6.3.8),15
+214,Deploying and optimizing the model with TensorRT to specific GPUs is taking more time than anticipated,"Inadequate consideration of the model's characteristics, such as model size, and project requirements, such as the need for real-time processing, resulting in an inappropriate choice of GPU",Implementation Process (6.4.9),24
+215,Increase in false positives during form-based phishing project ,The data is not properly labeled in the database,AI Data Engineering Process (6.4.8),23
+216,Insufficient model building and selection process within time constraints,Lack of knowledge and expertise of team members in model selection according to the domain,Project Planning Process (6.3.1),8
+217,Inability to obtain the data scraped from commercial sites,Data formats change over time in the third-party data source,Acquisition Process (6.1.1),0
+218,Lack of comprehensive testing in ML projects before deployment,The need for testers specifically in the ML domain,Portfolio Management Process (6.2.3),4
+219,Difficulty in numerically encoding text features,High Cardinality in Categorical Features,Risk Management Process (6.3.4),11
+220,Difficulty in selecting a representative validation dataset ,The need to validate the model with real-world data,AI Data Engineering Process (6.4.8),23
+221,Ambiguity in the labeling protocol,"Difficulty in initially determining the labeling protocol, such as whether to use pixel or bounding box, and how many different object classes",AI Data Engineering Process (6.4.8),23
+222,Understanding and reproducing the third-party pre-built model is time-consuming,No transparency regarding how the third-party pre-built model is trained and which input data the model is trained on,System Requirements Definition Process (6.4.3),18
+223,Compatibility issues arising from incompatible software versions,"Dependencies on external / third-party libraries or tools that may change over time
+",Maintenance Process (6.4.16),31
+224,Inability to utilize pre-built language models trained on text data written in English,The dataset is scattered across different languages,Implementation Process (6.4.9),24
+225,Biased and poor quality labeled data,Reliance on crowdsourced data labeling,AI Data Engineering Process (6.4.8),23
+226,Insufficient model building and selection process within time constraints,Conducting excessive number of experiments for model selection,Implementation Process (6.4.9),24
+227,Lack of use of software development conventions and reproducibility standards in the ML project ,"Software development conventions and reproducibility standards including documentation are neglected during the intermediate stages of an ML project such as research and prototyping, where the effectiveness of models or functions is still uncertain",Knowledge Management Process (6.2.6),7
+228,Uncertainty in data source structure,Lack of stakeholders' knowledge (customer) in ML domain or their technical unawareness on data requirements specification,Risk Management Process (6.3.4),11
+229,Some functions of the ML deployment tool perform poorly and cause unexpected issues ,Lack of comprehensive documentation of a recent deployment tool,Configuration Management Process (6.3.5),12
+230,Loss of information in experiment details,Manual experiement tracking is not systematically done,Project Planning Process (6.3.1),8
+231,Lack of comprehensive testing strategies before deployment,Lack of knowledge and expertise of ML team members in testing ,Verification Process (6.4.11),26
+232,Unable to include the documents exceeding the character size limitations of the embedding model into the datasets,Embedding size limitations of the third-party deep learning models,AI Data Engineering Process (6.4.8),23
+233,Uncertainty in data source structure,Lack of stakeholders' knowledge (customer) in ML domain or their technical unawareness on data requirements specification,Quality Assurance Process (6.3.8),15
+234,Stream images designed by software teams may not be compatible with data ingestion required for ML models / Interruption in real-time data,Lack of stakeholders' knowledge in ML domain or their technical unawareness,Portfolio Management Process (6.2.3),4
+235,Code duplication / Copy-paste coding,Multiple models sharing the same code,Quality Assurance Process (6.3.8),15
+236,"Problems in data retrieval via API, such as incorrect parsing, fetching unnecessary data, and not testing data acquisition",-,System Requirements Definition Process (6.4.3),18
+237,Unable to include the documents exceeding the character size limitations of the embedding model into the datasets,Embedding size limitations of the third-party deep learning models,AI Data Engineering Process (6.4.8),23
+238,Difficulty in tailoring existing in-house projects to different customers,Data heterogeneity arising from the use of different video cameras and various software for data collection in customer stores,AI Data Engineering Process (6.4.8),23
+239,Real-time data collection from drones is not allowed in public spaces for commercial purposes,Safety concerns regarding data collection with drones may lead to distraction of drivers in traffic,Risk Management Process (6.3.4),11
+240,Model training takes longer than anticipated,Inadequate choice of computing instances for training models such as using a low-capacity instance for a large model,System Requirements Definition Process (6.4.3),18
+241,"Variability in data types for similar data points such as timestamp vs. datetime, integer vs. float",Lack of standardization in the data,Risk Management Process (6.3.4),11
+242,Lack of experiment tracking,Developer resistance to new methodologies,Human Resource Management Process (6.2.4),5
+243,Bugs and issues being discovered during or after deployment,"Lack of comprehensive testing strategies and resource allocation for testing of data pipelines, model code, and overall system integration",Validation Process (6.4.13),28
+244,Ambiguity in the labeling protocol,The use cases of legitimate users and spammers are almost identical,AI Data Engineering Process (6.4.8),23
+245,The movement of objects and intermittent visibility significantly degrading the performance of models trained solely on still images,Video data introducing temporal dynamics and complexities such as occlusion (objects being obscured) or changes in object appearance and position over time,Implementation Process (6.4.9),24
+246,"Problems in data retrieval via API, such as incorrect parsing, fetching unnecessary data, and not testing data acquisition",-,Acquisition Process (6.1.1),0
+247,The model has low success in small object detection ,Lack of diverse training data,AI Data Engineering Process (6.4.8),23
+248,Potential loss of model and training progress due to interruptions such as power outage,Lack of experiment tracking which will let to define checkpoints and enable systematic model logging to recover from interruptions,Infrastructure Management Process (6.2.2),3
+249,Having noisy data,Scraped commercial websites include duplicate and inconsistent user submission data ,Quality Assurance Process (6.3.8),15
+250,Model building was naively done such as testing a pre-trained model with publicly available data to see if it works and fine tuning the model ,"The shortage of relevant data forced the ML team to rely on less appropriate, publicly available datasets",Implementation Process (6.4.9),24
+251,Difficulty in matching data collected from different third-party sources,Entity matching across different third-party data sources cannot be done properly,Quality Assurance Process (6.3.8),15
+252,The public dataset is not representative for the problem,They opted for using a public dataset rather than creating their own,AI Data Engineering Process (6.4.8),23
+253,Frequent infrastructure changes ,Infrastructure changes are requested and implemented without informing of the reasons all teams for the change,Infrastructure Management Process (6.2.2),3
+254,Lack of use of software development conventions and reproducibility standards in the ML project ,"Software development conventions and reproducibility standards including documentation are neglected during the intermediate stages of an ML project such as research and prototyping, where the effectiveness of models or functions is still uncertain",Knowledge Management Process (6.2.6),7
+255,Some functions of the ML deployment tool perform poorly and cause unexpected issues ,The early adoption of an immature and unstable third-party deployment tool's release,Project Assessment and Control Process (6.3.2),9
+256,Having noisy data,Email body containing HTML data cannot be preprocessed well and there is a difficulty on representing it as structured data,AI Data Engineering Process (6.4.8),23
+257,Inadequate software design choice limiting scalability of the implementation of ML model ,"Use of a third-party library that supports function-based, rather than class-based, object-oriented design",Design Definition Process (6.4.5),20
+258,Deploying and optimizing the model with TensorRT to specific GPUs is taking more time than anticipated,"Inadequate consideration of the model's characteristics, such as model size, and project requirements, such as the need for real-time processing, resulting in an inappropriate choice of GPU",Decision Management Process (6.3.3),10
+259,Necessary data cannot be obtained,Unfeasible and impractical data collection processes,Risk Management Process (6.3.4),11
+260,GPU utilization is not effectively done in the experiments across ML teams,The failure to utilize an Enterprise level solution for experiment management and effective GPU utilization,Implementation Process (6.4.9),24
+261,Uncertainty in data source structure,Lack of stakeholders' knowledge (customer) in ML domain or their technical unawareness on data requirements specification,Stakeholder Needs and Requirements Definition Process (6.4.2),17
+262,Change logs of model architectures and training are stored locally,Version control tools were not very advanced at the time of the project phase,Project Planning Process (6.3.1),8
+263,Missing downstream data during time series forecasting,Lack of monitoring of dependent downstream data,AI Data Engineering Process (6.4.8),23
+264,Lack of comprehensive testing in ML projects before deployment,Software testers are not experienced in testing for ML projects,Project Assessment and Control Process (6.3.2),9
+265,Unable to include the documents exceeding the character size limitations of the embedding model into the datasets,Embedding size limitations of the third-party deep learning models,Acquisition Process (6.1.1),0
+266,"Security challenges related to the setup, maintenance, and operation of the cloud-based infrastructure required to deploy ML models",The company operating within a closed intranet-based network environment,Stakeholder Needs and Requirements Definition Process (6.4.2),17
+267,"Each ML engineer is responsible for training a different model for their task but cannot use the necessary data independently, leading to delays","The decision was made to focus on immediate solutions and faster resolution during the model coding phase, independent of data, leading to the construction of the system on this basis",Project Planning Process (6.3.1),8
+268,Insufficient model building and selection process within time constraints,Conducting excessive number of experiments for model selection,Project Planning Process (6.3.1),8
+269,No previously labeled data,Customers email data do not inherently contain labels,Project Planning Process (6.3.1),8
+270,Code incomprehensibility and lack of code description,Lack of self-documented code,Knowledge Management Process (6.2.6),7
+271,"Significant reduction in training data after splitting the data into test, training, and validation sets",Limited data availability,AI Data Engineering Process (6.4.8),23
+272,"Problems in data retrieval via API, such as incorrect parsing, fetching unnecessary data, and not testing data acquisition",-,Risk Management Process (6.3.4),11
+273,Experiencing memory leaks from the deployed models,Inadequate and untested third-party software dependencies ,Acquisition Process (6.1.1),0
+274,Difficulty in matching data collected from different third-party sources,Entity matching across different third-party data sources cannot be done properly,AI Data Engineering Process (6.4.8),23
+275,The need for labelling protocol and training programs to ensure annotators understand and adhere to the labeling protocol,-,Configuration Management Process (6.3.5),12
+276,Ambiguity in the labeling protocol,"Difficulty in initially determining the labeling protocol, such as whether to use pixel or bounding box, and how many different object classes",Quality Management Process (6.2.5),6
+277,Difficulty in selecting a representative validation dataset ,The need to validate the model with real-world data,AI Data Engineering Process (6.4.8),23
+278,"The data has a limited number of labeled instances, and those that are labeled are biased",The limitation is due to limited resources for manual labeling,Quality Assurance Process (6.3.8),15
+279,GPU utilization is not effectively done in the experiments across ML teams,The failure to utilize an Enterprise level solution for experiment management and effective GPU utilization,Infrastructure Management Process (6.2.2),3
+280,Change logs of model architectures and training are stored locally,Lack of adoption of a professional experiment tracking tool for systematic tracking of models,Configuration Management Process (6.3.5),12
+281,Lack of experiment tracking,-,Infrastructure Management Process (6.2.2),3
+282,Low code quality (as there is an accumulation of lines of hard-to-maintain code),Continuous fixes on the code (Lack of code optimization),Verification Process (6.4.11),26
+283,Inadequate software design choice limiting scalability of the implementation of ML model ,"Use of a third-party library that supports function-based, rather than class-based, object-oriented design",Design Definition Process (6.4.5),20
+284,Increase in false positives during anomaly detection project using time-series data,The customer thinks that the reported model result is false positive due to lack of agreeing on requirements,Quality Assurance Process (6.3.8),15
+285,Difficulties in implementing this problem as a multi-objective optimization problem ,The need of including both information retrieval and ranking functionalities simultaneously within the same algorithm,Implementation Process (6.4.9),24
+286,The annotation team does not handle the increased workload of data labeling,High maintenance requirements for data labeling due to the rapid expansion of the project,AI Data Engineering Process (6.4.8),23
+287,Lack of scalability and flexibility in cloud server allocation during deployment of their ML applications,Auto-scaling to optimize computing resources is not implemented yet such as using Kubernetes,Infrastructure Management Process (6.2.2),3
+288,The need for labelling protocol and training programs to ensure annotators understand and adhere to the labeling protocol,-,Human Resource Management Process (6.2.4),5
+289,Lack of experiment tracking,Developer resistance to new methodologies,Knowledge Management Process (6.2.6),7
+290,Real-time data collection from drones is not allowed in public spaces for commercial purposes,Regulatory restrictions regarding data collection from drones in public spaces,AI Data Engineering Process (6.4.8),23
+291,Out-of-distribution (OOD) examples,"Adversarial attacks by phishers, with spam content methods continuously evolving and improving",Operation Process (6.4.15),30
+292,Compatibility issues arising from incompatible software versions,"Dependencies on external / third-party libraries or tools that may change over time
+",Risk Management Process (6.3.4),11
+293,Model building was naively done such as testing a pre-trained model with publicly available data to see if it works and fine tuning the model ,"The shortage of relevant data forced the ML team to rely on less appropriate, publicly available datasets",AI Data Engineering Process (6.4.8),23
+294,Out-of-distribution (OOD) examples,"Adversarial attacks by phishers, with spam content methods continuously evolving and improving",Quality Assurance Process (6.3.8),15
+295,No previously labeled data,Limited human resources for labeling,System Requirements Definition Process (6.4.3),18
+296,Compatibility issues arising from incompatible software versions,"Dependencies on external / third-party libraries or tools that may change over time
+",Risk Management Process (6.3.4),11
+297,"Variability in data types for similar data points such as timestamp vs. datetime, integer vs. float",Lack of standardization in the data,Design Definition Process (6.4.5),20
+298,Empty values in the dataset,Unable to find an effective strategy to deal with data consistency and quality checks within time constraints,Quality Assurance Process (6.3.8),15
+299,Redundant labeling processes ,The ML team’s unawareness of existing pre-trained models that could be used for data handling,Human Resource Management Process (6.2.4),5
+300,The need for labelling protocol and training programs to ensure annotators understand and adhere to the labeling protocol,-,AI Data Engineering Process (6.4.8),23
+301,Model training takes longer than anticipated,Inadequate choice of computing instances for training models such as using a low-capacity instance for a large model,Implementation Process (6.4.9),24
+302,Technical misalignment between hardware and model specifications such as the usage of dedicated hardware (System on Chip) leading to writing custom code for hardware-specific integration and the prolonged and laborious process of model integration,"SoCs are optimized for specific tasks, which means they can perform those tasks much more efficiently and less costly compared to general-purpose hardware",Integration Process (6.4.10),25
+303,Initial design decisions about the third-party dependencies did not align with the domain problem's requirements in the later stages of the project,Insufficient third-party model or library selection process,Quality Assurance Process (6.3.8),15
+304,"Problems in data retrieval via API, such as incorrect parsing, fetching unnecessary data, and not testing data acquisition",Poor data pipeline decisions,AI Data Engineering Process (6.4.8),23
+305,Partially obtaining data from external third-party sources ethically and legally is labor-intensive,"Data was subject to licensing agreements that restrict its use and did not comply with legal requirements, such as data protection laws and regulations",AI Data Engineering Process (6.4.8),23
+306,Redundant labeling processes,The ML team’s unawareness of existing pre-trained models that could be used for data handling,Quality Management Process (6.2.5),6
+307,It takes significant time for model selection and model training,Using of a wide range of hyperparameters for model training to select the best model,Implementation Process (6.4.9),24
+308,"Reduction in the number of data sources such as cameras to achieve a simpler, more feasible solution",Excessive number of cameras led to unmanageable processing demands and algorithmic complexity,System Requirements Definition Process (6.4.3),18
+309,Lack of a unified labeling protocol within different parts of the same projects ,Different teams identify their own annotation requirements separately for different parts of the same project and do not communicate,AI Data Engineering Process (6.4.8),23
+310,Identification of issues with out-of-distribution (OOD) examples or novelty detection after model deployment,"Changes in objects data such as new generation shopping carts, indicating that the environment is chaotic and continuously evolving",Validation Process (6.4.13),28
+311,The selected models for the project should be stored and the cost of storing them is high,"To ensure model generalization in case of data drift or leakage, they need to track model inference results",Continuous Validation Process (6.4.14),29
+312,The deployed model shuts down in production,Running a heavy model causing memory leak,System Requirements Definition Process (6.4.3),18
+313,Inability to clearly understand which keywords and/or pages users used to access the relevant page for the recommendation engine,Lacking a cloud-based analytical environment that can acquire data and identify its use cases ,Project Planning Process (6.3.1),8
+314,Not adopting a time-aware model selection process,The necessity of achieving performance that can keep up with real-time analysis speed,Quality Assurance Process (6.3.8),15
+315,Ambiguity in the labeling protocol,"Difficulty in initially determining the labeling protocol, such as whether to use pixel or bounding box, and how many different object classes",AI Data Engineering Process (6.4.8),23
+316,Low code quality (as there is an accumulation of lines of hard-to-maintain code),The issue is not a priority for the team,Quality Assurance Process (6.3.8),15
+317,Lack of comprehensive testing in ML projects before deployment,The need for testers specifically in the ML domain,Verification Process (6.4.11),26
+318,Bugs and issues being discovered during or after deployment,"Lack of comprehensive testing strategies and resource allocation for testing of data pipelines, model code, and overall system integration",Quality Assurance Process (6.3.8),15
+319,Unable to select a high-performance model for a real-time image processing application,"The project is large and so requires a faster, seamless solution",Implementation Process (6.4.9),24
+320,Compatibility issues arising from incompatible software versions,Lack of software version documentation,Integration Process (6.4.10),25
+321,Out-of-distribution (OOD) examples,"Adversarial attacks by phishers, with spam content methods continuously evolving and improving",Quality Assurance Process (6.3.8),15
+322,Model building was naively done such as testing a pre-trained model with publicly available data to see if it works and fine tuning the model ,"The shortage of relevant data forced the ML team to rely on less appropriate, publicly available datasets",Acquisition Process (6.1.1),0
+323,No previously labeled data,Lack of data collection at the customer side,Risk Management Process (6.3.4),11
+324,Data smells emerged due to inconsistency between previously labelled data and current data labeled with the revised labeling protocol,-,Quality Assurance Process (6.3.8),15
+325,Model update processes implemented temporarily for a single user's need (quick fix) are not scaled for all similar deployed models and they are not tested,Urgent customer needs are required to be solved in critical time,Verification Process (6.4.11),26
+326,Time-consuming and resource-intensive process of labeling data,Lack of human resources for labeling ,AI Data Engineering Process (6.4.8),23
+327,Understanding and reproducing the third-party pre-built model is time-consuming,No transparency regarding how the third-party pre-built model is trained and which input data the model is trained on,Risk Management Process (6.3.4),11
+328,Insufficient model building and selection process within time constraints,Lack of knowledge and expertise of team members in model selection according to the domain,Human Resource Management Process (6.2.4),5
+329,Real-time data collection from drones is not allowed in public spaces for commercial purposes,Regulatory restrictions regarding data collection from drones in public spaces,Design Definition Process (6.4.5),20
+330,Frequent infrastructure changes ,Infrastructure changes are requested and implemented without informing of the reasons all teams for the change,Maintenance Process (6.4.16),31
+331,"The data has a limited number of labeled instances, and those that are labeled are biased",The bias is due to being assumption-based labeling regarding which cases are considered as spam,Quality Assurance Process (6.3.8),15
+332,Increase in false positives during email-based phishing project,Incorrect assumption about which data to be used for labeling from a large user dataset,Quality Assurance Process (6.3.8),15
+333,Understanding and reproducing the third-party pre-built model is time-consuming,No transparency regarding how the third-party pre-built model is trained and which input data the model is trained on,Configuration Management Process (6.3.5),12
+334,Change logs of model architectures and training are stored locally,Lack of adoption of a professional tool for systematic model tracking,Infrastructure Management Process (6.2.2),3
+335,Difficulties in minimizing latency during deployment of LLMs ,"The complexity of the system, such as having multiple layers or components that add to the overall latency, use of latest technology, database choices, and the implementation of end-to-end systems",Quality Assurance Process (6.3.8),15
+336,Incomplete or insufficient datasets gathered from third-party data sources,Restrictions on the number of API requests,Acquisition Process (6.1.1),0
+337,Understanding and reproducing the third-party pre-built model is time-consuming,No transparency regarding how the third-party pre-built model is trained and which input data the model is trained on,System Requirements Definition Process (6.4.3),18
+338,Biased and poor quality labeled data,Reliance on crowdsourced data labeling,AI Data Engineering Process (6.4.8),23
+339,Partially obtaining data from external third-party sources ethically and legally is labor-intensive,"Data was subject to licensing agreements that restrict its use and did not comply with legal requirements, such as data protection laws and regulations",System Requirements Definition Process (6.4.3),18
+340,Difficulty in determining all possible use cases and creating a dataset representing all these different use case scenarioes ,A wide variety of use cases,Project Planning Process (6.3.1),8
+341,Necessary data cannot be obtained,Unfeasible and impractical data collection processes,AI Data Engineering Process (6.4.8),23
+342,Quantization and model pruning which are required for deployment on embedded platforms are very labor-intensive and time-consuming processes,"The need for deep technical expertise to navigate the trade-offs between model size, speed, and accuracy",Human Resource Management Process (6.2.4),5
+343,Ambiguity in the labeling protocol,-,System Requirements Definition Process (6.4.3),18
+344,The deployed model shuts down in production,Running a heavy model causing memory leak,Operation Process (6.4.15),30
+345,Compatibility issues arising from incompatible software versions,Lack of software version documentation,Integration Process (6.4.10),25
+346,No previously labeled data,Lack of data collection at the customer side,System Requirements Definition Process (6.4.3),18
+347,No previously labeled data,Customers email data do not inherently contain labels,AI Data Engineering Process (6.4.8),23
+348,Time-consuming and resource-intensive process of labeling data,Having data from heteregenous sources,AI Data Engineering Process (6.4.8),23
+349,Empty values in the dataset,Unable to find an effective strategy to deal with data consistency and quality checks within time constraints,Risk Management Process (6.3.4),11
+350,Necessary data cannot be obtained,Unfeasible and impractical data collection processes,Project Planning Process (6.3.1),8
+351,Excessive use of containerization to achieve deployment isolation and manageability in ML pojects,Over-prioritization of isolation requirements in the deployment at the beginning of the project,System Requirements Definition Process (6.4.3),18
+352,The selected models for the project should be stored and the cost of storing them is high,"To ensure model generalization in case of data drift or leakage, they need to track model inference results",Implementation Process (6.4.9),24
+353,"Significant reduction in training data after splitting the data into test, training, and validation sets",Limited data availability,Quality Assurance Process (6.3.8),15
+354,Change logs of model architectures and training are stored locally,"Lack of organizational readiness to adapt to experiment tracking tools, coupled with the discouraging nature of the required learning curve.",Project Planning Process (6.3.1),8
+355,Real-time data collection from drones is not allowed in public spaces for commercial purposes,Regulatory restrictions regarding data collection from drones in public spaces,System Requirements Definition Process (6.4.3),18
+356,Low code quality (as there is an accumulation of lines of hard-to-maintain code),The issue is not a priority for the team,Quality Assurance Process (6.3.8),15
+357,Having noisy data,Data formats in public datasets are not matched,Quality Assurance Process (6.3.8),15
+358,Ambiguity in the labeling protocol,-,Quality Management Process (6.2.5),6
+359,Incomplete or insufficient datasets gathered from third-party data sources,Restrictions on the number of API requests,Risk Management Process (6.3.4),11
+360,Lack of comprehensive testing in ML projects before deployment,Software testers are not experienced in testing for ML projects,Human Resource Management Process (6.2.4),5
+361,Model building was naively done such as testing a pre-trained model with publicly available data to see if it works and fine tuning the model ,"The shortage of relevant data forced the ML team to rely on less appropriate, publicly available datasets",Acquisition Process (6.1.1),0
+362,Inadequate choice of framework which is for processing of large-scale task-based pipelines,The chosen framework has modules enable developers to observe model inference results in detail and ease of development features,Decision Management Process (6.3.3),10
+363,Difficulty in selecting a representative validation dataset ,The need to validate the model with real-world data,Quality Assurance Process (6.3.8),15
+364,Model building was naively done such as testing a pre-trained model with publicly available data to see if it works and fine tuning the model ,The need of private representative company data which isn't shared with the team at the beginning,AI Data Engineering Process (6.4.8),23

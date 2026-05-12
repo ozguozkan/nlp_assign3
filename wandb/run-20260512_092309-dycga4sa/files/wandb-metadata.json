@@ -1,0 +1,35 @@
+{
+  "os":  "Windows-11-10.0.26100-SP0",
+  "python":  "CPython 3.13.7",
+  "startedAt":  "2026-05-12T06:23:09.963585Z",
+  "program":  "IS584_Assignment3.ipynb",
+  "codePath":  "IS584_Assignment3.ipynb",
+  "codePathLocal":  "IS584_Assignment3.ipynb",
+  "root":  "C:\\Users\\ozgu.ozkan\\Desktop\\IS584_A3",
+  "host":  "BTS0225",
+  "executable":  "C:\\Users\\ozgu.ozkan\\Desktop\\IS584_A3\\IS584_Assign3\\Scripts\\python.exe",
+  "cpu_count":  20,
+  "cpu_count_logical":  28,
+  "gpu":  "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "1013309239296",
+      "used":  "526308106240"
+    }
+  },
+  "memory":  {
+    "total":  "34029162496"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "memoryTotal":  "17171480576",
+      "cudaCores":  9728,
+      "architecture":  "Ada",
+      "uuid":  "GPU-1f994685-d36f-c01d-1c9b-dbfb8e368ba3"
+    }
+  ],
+  "cudaVersion":  "12.8",
+  "writerId":  "pv6oggc5puw842cur20tjsm4qhh66c6s"
+}
