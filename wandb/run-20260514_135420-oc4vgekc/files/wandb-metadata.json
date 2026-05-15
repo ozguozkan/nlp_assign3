@@ -1,0 +1,39 @@
+{
+  "os":  "Windows-11-10.0.26100-SP0",
+  "python":  "CPython 3.13.7",
+  "startedAt":  "2026-05-14T10:54:20.577152Z",
+  "program":  "IS584_Assignment3.ipynb",
+  "codePath":  "IS584_Assignment3.ipynb",
+  "codePathLocal":  "IS584_Assignment3.ipynb",
+  "git":  {
+    "remote":  "https://github.com/ozguozkan/nlp_assign3.git",
+    "commit":  "5b7eb544ce6c236f8e731eb97424a5115b47122d"
+  },
+  "root":  "C:\\Users\\ozgu.ozkan\\Desktop\\IS584_A3",
+  "host":  "BTS0225",
+  "executable":  "C:\\Users\\ozgu.ozkan\\Desktop\\IS584_A3\\IS584_Assign3\\Scripts\\python.exe",
+  "cpu_count":  20,
+  "cpu_count_logical":  28,
+  "gpu":  "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "1013309239296",
+      "used":  "520721772544"
+    }
+  },
+  "memory":  {
+    "total":  "34029162496"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "memoryTotal":  "17171480576",
+      "cudaCores":  9728,
+      "architecture":  "Ada",
+      "uuid":  "GPU-1f994685-d36f-c01d-1c9b-dbfb8e368ba3"
+    }
+  ],
+  "cudaVersion":  "12.8",
+  "writerId":  "bddgp2e1c22vr540q9c4bpf3wkwoto1y"
+}
